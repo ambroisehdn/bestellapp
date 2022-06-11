@@ -24,13 +24,13 @@ class ShopScreen extends StatelessWidget {
           padding: const EdgeInsets.only(top: 20, bottom: 10),
           child: Column(
             children: [
-              SvgPicture.asset('assets/icons/DHBW-Logo.svg'),
+              SvgPicture.asset('assets/icons/university-cap.svg'),
               SizedBox(height: 5),
               Text('Bestellapp DHBW'),
               SizedBox(height: 10),
               SearchField(),
-              SizedBox(height: 10),
-              Banners(),
+// not needed              SizedBox(height: 10),
+//              Banners(),
               SizedBox(height: 10),
               _buildSectiontitle('Exclusive Offers', () {}),
               ExclusiveOffers(),

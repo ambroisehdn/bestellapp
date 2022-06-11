@@ -17,8 +17,7 @@ class _HomeState extends State<Home> {
     {'icon': 'assets/icons/shop.svg', 'title': 'Shop'},
     {'icon': 'assets/icons/explore.svg', 'title': 'Explore'},
     {'icon': 'assets/icons/cart.svg', 'title': 'Cart'},
-    {'icon': 'assets/icons/favorite.svg', 'title': 'Favorites'},
-    {'icon': 'assets/icons/account.svg', 'title': 'Account'},
+    {'icon': 'assets/icons/account.svg', 'title': 'Pick Up'},
   ]);
 
   final List<Widget> _tabs = List.unmodifiable([
