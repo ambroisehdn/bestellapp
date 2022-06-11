@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:grocery_shop/screens/shop_screen/shop_screen.dart';
+import 'package:grocery_shop/screens/cart_screen/checkout_screen.dart';
 
 import '../../constants.dart';
 import 'widgets/nav_bar.dart';
@@ -23,8 +24,7 @@ class _HomeState extends State<Home> {
   final List<Widget> _tabs = List.unmodifiable([
     ShopScreen(),
     Container(),
-    Container(),
-    Container(),
+    CartScreen(),
     Container(),
   ]);
 

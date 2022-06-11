@@ -29,8 +29,6 @@ class ShopScreen extends StatelessWidget {
               Text('Bestellapp DHBW'),
               SizedBox(height: 10),
               SearchField(),
-// not needed              SizedBox(height: 10),
-//              Banners(),
               SizedBox(height: 10),
               _buildSectiontitle('Exclusive Offers', () {}),
               ExclusiveOffers(),
@@ -59,13 +57,6 @@ class ShopScreen extends StatelessWidget {
           Text(
             title,
             style: kTitleStyle.copyWith(fontSize: 18),
-          ),
-          InkWell(
-            onTap: onTap ?? () {},
-            child: Text(
-              'See all',
-              style: TextStyle(color: kPrimaryColor),
-            ),
           ),
         ],
       ),
