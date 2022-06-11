@@ -24,9 +24,9 @@ class ShopScreen extends StatelessWidget {
           padding: const EdgeInsets.only(top: 20, bottom: 10),
           child: Column(
             children: [
-              SvgPicture.asset('assets/icons/carrot.svg'),
+              SvgPicture.asset('assets/icons/DHBW-Logo.svg'),
               SizedBox(height: 5),
-              Text('Istanbul, Levent'),
+              Text('Bestellapp DHBW'),
               SizedBox(height: 10),
               SearchField(),
               SizedBox(height: 10),
