@@ -19,7 +19,7 @@ class GroceryItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: () => onTap(context),
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
