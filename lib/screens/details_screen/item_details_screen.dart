@@ -1,17 +1,26 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_shop/constants.dart';
 import 'package:grocery_shop/models/models.dart';
+import 'package:grocery_shop/screens/shop_screen/shop_screen.dart';
 import 'package:grocery_shop/widgets/round_button.dart';
 
+import '../cart_screen/checkout_screen.dart';
 import 'widgets/details.dart';
 import 'widgets/expandable.dart';
 import 'widgets/header.dart';
 
+void onPressed(BuildContext context) {
+  Navigator.of(context)
+      .push(MaterialPageRoute(builder: (BuildContext context) => ShopScreen()));
+}
 class ItemDetailsSreen extends StatelessWidget {
   static const routeName = 'item-details-screen/';
   final MGrocery item;
 
   const ItemDetailsSreen({Key key, this.item}) : super(key: key);
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -53,8 +62,8 @@ class ItemDetailsSreen extends StatelessWidget {
               SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
-                child: RoundButton(title: 'Add To Cart'),
-              ),
+                child: RoundButton(title: 'Add To Cart', onPressed: () => onPressed(context)),
+            ),
             ],
           ),
         ),

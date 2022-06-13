@@ -18,7 +18,7 @@ class _BannersState extends State<Banners> with SingleTickerProviderStateMixin {
 
   final List<Widget> _banners = List.generate(
     3,
-    (index) => Padding(
+        (index) => Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15),
       child: Image.asset(
         'assets/images/vegs_banner.png',
@@ -42,7 +42,7 @@ class _BannersState extends State<Banners> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MQuery.height * 0.2,      
+      height: MQuery.height * 0.2,
       child: Stack(
         fit: StackFit.expand,
         children: [
@@ -75,7 +75,7 @@ class _BannersState extends State<Banners> with SingleTickerProviderStateMixin {
 
 
 class PageIndicator extends StatefulWidget {
-  final int index;  
+  final int index;
   final TabController controller;
   const PageIndicator({
     Key key, this.index, this.controller,
@@ -90,12 +90,12 @@ class _PageIndicatorState extends State<PageIndicator> {
   bool _expanded;
 
   @override
-  void initState() {    
+  void initState() {
     super.initState();
     _expanded = widget.index == widget.controller.index;
 
     // add listener to tabcontroller to update page indicator size
-    widget.controller.addListener(() { 
+    widget.controller.addListener(() {
       setState(() {
         _expanded = widget.index == widget.controller.index;
       });
@@ -106,11 +106,11 @@ class _PageIndicatorState extends State<PageIndicator> {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      duration: Duration(milliseconds: 300),      
+      duration: Duration(milliseconds: 300),
       width: _expanded ? 15 : 5,
       height: 5,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),      
+        borderRadius: BorderRadius.circular(15),
         color: _expanded ? kPrimaryColor : Colors.grey,
       ),
     );
