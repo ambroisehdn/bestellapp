@@ -13,7 +13,7 @@ class Groceries extends StatelessWidget {
   final List<MGroceries> _items = [
     MGroceries(
       title: 'Pulses',
-      color: Hexcolor('#F8A44C').withOpacity(0.15),
+      color: Color(0xFFF8A44C).withOpacity(0.15),
       url: 'assets/images/pulses.png',
     ),
     MGroceries(
