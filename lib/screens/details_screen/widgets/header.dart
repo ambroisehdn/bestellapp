@@ -30,10 +30,11 @@ class Header extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      // Back Button
                       InkWell(
-                        onTap: () => Navigator.of(context).pop(),
-                        child: Icon(Icons.chevron_left,
-                            color: kBlackColor, size: 30),
+                       onTap: () => Navigator.of(context).pop(),
+                       child: Icon(Icons.chevron_left,
+                          color: kBlackColor, size: 30),
                       ),
                       SvgPicture.asset('assets/icons/share.svg'),
                     ],

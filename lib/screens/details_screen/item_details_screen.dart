@@ -10,10 +10,6 @@ import 'widgets/details.dart';
 import 'widgets/expandable.dart';
 import 'widgets/header.dart';
 
-void onPressed(BuildContext context) {
-  Navigator.of(context)
-      .push(MaterialPageRoute(builder: (BuildContext context) => ShopScreen()));
-}
 class ItemDetailsSreen extends StatelessWidget {
   static const routeName = 'item-details-screen/';
   final MGrocery item;
@@ -62,7 +58,7 @@ class ItemDetailsSreen extends StatelessWidget {
               SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
-                child: RoundButton(title: 'Add To Cart', onPressed: () => onPressed(context)),
+                child: RoundButton(title: 'Add To Cart', onPressed: () => Navigator.of(context).pop()),
             ),
             ],
           ),

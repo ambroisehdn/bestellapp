@@ -7,11 +7,6 @@ import 'package:grocery_shop/screens/shop_screen/widgets/banners.dart';
 import 'package:grocery_shop/screens/shop_screen/widgets/grocery_item.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-import 'widgets/best_selling.dart';
-import 'widgets/exclusive_offers.dart';
-import 'widgets/groceries.dart';
-import 'widgets/meats.dart';
-import 'widgets/search_field.dart';
 
 class CartScreen extends StatelessWidget {
   @override
