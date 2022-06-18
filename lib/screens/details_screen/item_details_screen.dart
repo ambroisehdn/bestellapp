@@ -58,7 +58,14 @@ class ItemDetailsSreen extends StatelessWidget {
               SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
-                child: RoundButton(title: 'Add To Cart', onPressed: () => Navigator.of(context).pop()),
+                child: RoundButton(title: 'Add To Cart', onPressed: () {
+                  var route = new MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        new CartScreen(item: item),
+                );
+                  Navigator.of(context).push(route);
+                },
+              ),
             ),
             ],
           ),
@@ -67,3 +74,4 @@ class ItemDetailsSreen extends StatelessWidget {
     );
   }
 }
+
